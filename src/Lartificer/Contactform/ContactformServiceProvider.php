@@ -18,7 +18,12 @@ class ContactformServiceProvider extends ServiceProvider {
         
         // Include the views
         $this->loadViewsFrom(__DIR__ . '/../../views', 'contactform');
-        
+		
+		// Publish the config
+		$this->publishes([
+				__DIR__ . '/../../config/contactform.php' => config_path('lartificer/contactform/contactform.php'),
+		], 'config');
+		
         // Include the routes
 		include __DIR__ . '/../../routes.php';
 	}

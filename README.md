@@ -5,34 +5,20 @@ This package is a part of the Lartificer project, based on the Laravel Framework
 ## Installation
 The whole project is available as [Packagist Lartificer project](https://packagist.org/packages/lartificer/contactform) to use with Composer.
 
-To use the contactform package in your Laravel project, first add it to the `composer.json` in your project's root directory. To enable custom install paths for your Composer packages, it is also necessary to require the [composer-custom-directory-installer](https://github.com/mnsami/composer-custom-directory-installer).
+To use the contactform package in your Laravel project, first add it to the `composer.json` in your project's root directory.
 
 ### Composer
 ```javascript
 "require": {
 		"laravel/framework": "5.0.*",
 		...
-        "mnsami/composer-custom-directory-installer": "1.0.*",
         "lartificer/contactform": "dev-master"
 	},
 ```
-Make the PSR-0 namespace fit, and add the `extra` option to install the package at a custom path.
-```javascript
-    "autoload": {
-        ...
-	    "psr-0": {
-		  "Lartificer\\Contactform": "path/to/lartificer/contactform/src/"
-		}
-	},
-    "extra": {
-      "installer-paths": {
-        "./path/to/lartificer/contactform/": ["lartificer/contactform"]
-      }
-    }
-```
+Run composer update afterwards.
 
-### App.php
-Now you have to register the NewsServiceProvider in your `app.php` file.
+### app.php
+Now you have to register the ContactformServiceProvider in your `app.php` file.
 
 ```php
 'providers' => [
@@ -48,9 +34,11 @@ Now you have to register the NewsServiceProvider in your `app.php` file.
 ```
 
 ## How to use?
-This is a multi-language package. To fit your language needs, add the corresponding language files in the `src/lang` directory. The files in this directory determine the displayed texts and the routes.
-The `ContactformController` offers you the posibility to enable the multilanguage feature in its `__construct()` method.
-
+* Install the package
+* Create a link on your website to /{{ trans("contactform::links.contact") }}
+* Publish the config file and adjust your email address:
+```php artisan vendor:publish --provider="vendor/lartificer/contactform/src/Lartificer/Contactform/ContactformServiceProvider.php" --tag="config"```
+* You are done, enjoy your contact form :)
 
 ## License
 Copyright (c) 2015 Sopamo GmbH
