@@ -1,5 +1,8 @@
 <?php
 
 return [
-    'recipient' => 'hello@example.com'
+        'recipient' => [
+                'address' => 'hello@example.com',
+                'name'    => 'Paul Mohr',
+        ],
 ];
