@@ -53,7 +53,7 @@ The `ContactformController` offers you the posibility to enable the multilanguag
 
 
 ## License
-Copyright (c) 2015 Paul Mohr, Fabian Henkel
+Copyright (c) 2015 Sopamo GmbH
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
