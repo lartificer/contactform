@@ -10,7 +10,7 @@ To use the contactform package in your Laravel project, first add it to the `com
 ### Composer
 ```javascript
 "require": {
-		"laravel/framework": "5.0.*",
+		"laravel/framework": "5.1.*",
 		...
         "lartificer/contactform": "dev-master"
 	},
