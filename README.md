@@ -37,7 +37,7 @@ Now you have to register the ContactformServiceProvider in your `app.php` file.
 * Install the package
 * Create a link on your website to /{{ trans("contactform::links.contact") }}
 * Publish the config file and adjust your email address:
-```php artisan vendor:publish --provider="vendor/lartificer/contactform/src/Lartificer/Contactform/ContactformServiceProvider.php" --tag="config"```
+```php artisan vendor:publish --provider="Lartificer\Contactform\ContactformServiceProvider" --tag="config"```
 * You are done, enjoy your contact form :)
 
 ## License
