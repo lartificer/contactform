@@ -3,6 +3,7 @@
 use Illuminate\Routing\Controller;
 use Input;
 use Mail;
+use Redirect;
 
 class ContactController extends Controller {
     
