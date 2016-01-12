@@ -1,6 +1,10 @@
 # Lartificer Contactform
 
-This package is a part of the Lartificer project, based on the Laravel Framework. Only to use inside a Laravel project.
+A drop in contactform component for Laravel applications.
+This package is a part of the Lartificer project. Only use it inside a Laravel 5 project.
+
+## Documentation
+[On the Lartificer website](http://lartificer.com/contactform)
 
 ## Installation
 The whole project is available as [Packagist Lartificer project](https://packagist.org/packages/lartificer/contactform) to use with Composer.
